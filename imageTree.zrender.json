@@ -1,0 +1,26 @@
+{
+  "name": "imageTree",
+  "title": "Imagetree",
+  "description": "the image tree base on zrender.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/liuxc/imageTree",
+  "author": {
+    "name": "liuxc",
+    "email": "liuxc0116@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/liuxc/imageTree.git"
+  },
+  "bugs": "https://github.com/liuxc/imageTree/issues",
+  "licenses": [
+    {
+      "type": "zrender",
+      "url": "https://github.com/liuxc/imageTree/blob/master/LICENSE-zrender"
+    }
+  ],
+  "dependencies": {
+    "zrender": "*"
+  },
+  "keywords": []
+}
