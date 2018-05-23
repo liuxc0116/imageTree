@@ -43,6 +43,7 @@
             this.render(data);
         },
         render: function(data, parent, parent_position_start, parent_width, level_index, last_image_pos_y) {
+            //create tree use dichotomy
             var This = this;
             if (this.zr == null) {
                 this.init();
@@ -95,22 +96,23 @@
                 var text = "";
                 for (var key in info) {
                     text += key + " = " + info[key] + "\n";
-                };
+                }
                 
                 var text_position_x = position_x + obj.width + 10;
                 var text_position_y = position_y + 10;
                 var text_width = 150;
                 if (!has_child) {
-                    text_position_x = position_x - text_width / 2;
+                    text_position_x = position_x - text_width / 2 + obj.width / 2;
                     text_position_y = position_y + obj.height / 2 + 10;
                 }
+                
                 var zr_text = new zrender.Text({
                     position : [text_position_x, text_position_y],
                     style: {
                         text: text,
                         width: text_width,
-                        textFill: '#922889',
-                        textFont: '12px Microsoft Yahei',
+                        textFill: '#5d8578',
+                        textFont: '10px Microsoft Yahei',
                         textLineHeight: 18,
                         rich: {
                             a: {
@@ -126,13 +128,13 @@
                     draggable: true
                 }).on('mouseover', function() {
                     this.attr("style", {
-                        textFill: 'green',
+                        textFill: '#55a36b',
                         truncate: {
                         }
                     });
                 }).on('mouseout',function() {
                     this.attr("style", {
-                        textFill: '#922889',
+                        textFill: '#5d8578',
                         truncate: {
                             outerWidth: text_width,
                             ellipsis: "..."
@@ -144,6 +146,7 @@
                     }
                 });
                 this.zr.add(zr_text);
+
                 if (has_parent) {
                     var line = new zrender.Line({
                         shape: {
@@ -153,7 +156,6 @@
                             y2: zr_obj.position[1] + zr_obj.style.height / 2
                         },
                         style: {
-                            fill: null,
                             stroke: '#4965b0',
                             lineWidth: 2
                         },
