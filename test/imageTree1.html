@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <title>imageTree</title>
 <script src="js/zrender.min.js" type="text/javascript"></script>
-<script src="../src/zrender.imageTree.dichotomy.js" type="text/javascript"></script>
+<!--<script src="../src/zrender.imageTree.js" type="text/javascript"></script>-->
+<script src="../src/zrender.imageTree.max.leaf.js" type="text/javascript"></script>
    
     <style>
         #all {
             margin: auto;
             width: 800px;
-            height: 800px;
+            height: 500px;
         }
         #main {
             width: 100%;
@@ -97,6 +98,25 @@
                                 ]
                             }
                         }, 
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-皓宽", 
+                                "互联地址": "192.168.1.4",
+                                "BGP-ASN": 65100,
+                                "PE名称": "cn.pek1.pe1",
+                                "PE接口名": "Ethunk3",
+                                "SW名称": "cn.pek1.sw1",
+                                "SW接口": "XGigabitEthernet0/0/11",
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.5.0/24", 
+                                    "172.16.6.0/24"
+                                ]
+                            }
+                        },
                         {
                             "img_src": "image/port-c.png", 
                             "width": 25, 
