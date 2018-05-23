@@ -219,5 +219,6 @@
             }
         }
     };
+    
     window.imageTree = imageTree;
 })(zrender);
