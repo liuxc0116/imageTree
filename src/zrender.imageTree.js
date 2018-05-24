@@ -113,7 +113,7 @@
     
     /* 
      * 先画最底层，
-     * 上层元素根据底层子元素得到x的坐标
+     * 父元素的x坐标根据子元素的x坐标计算得出
      */
     var drawTreeUseMaxLeaf = function(This) {
         var layers = This.layers;
