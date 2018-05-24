@@ -1,0 +1,192 @@
+// JSON Document
+var dataTestOneTree = {
+    title : "AgotoZ 北京同城网络结构",
+    data: [
+        {
+            "img_src": "image/general_router_70.png", 
+            "width": 75, 
+            "height": 52, 
+            "data": {
+                "id": 14000, 
+                "子网": "192.168.1.0/24"
+            }, 
+            "childrens": [
+                {
+                    "img_src": "image/general_switch_70.png", 
+                    "width": 75, 
+                    "height": 52, 
+                    "data": {
+                        "id": 13000
+                    }, 
+                    "childrens": [
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX云", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.1.0/24", 
+                                    "172.16.2.0/24"
+                                ]
+                            }
+                        }, 
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.3.0/24", 
+                                    "172.16.4.0/24"
+                                ]
+                            }
+                        }, 
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.5.0/24", 
+                                    "172.16.6.0/24"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+};
+
+var dataTestTwoTree = {
+    title : "AgotoZ 北京同城网络结构",
+    data: [
+        {
+            "img_src": "image/general_router_70.png", 
+            "width": 75, 
+            "height": 52, 
+            "data": {
+                "id": 14000, 
+                "子网": "192.168.1.0/24"
+            }, 
+            "childrens": [
+                {
+                    "img_src": "image/general_switch_70.png", 
+                    "width": 75, 
+                    "height": 52, 
+                    "data": {
+                        "id": 13000
+                    }, 
+                    "childrens": [
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX云", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.1.0/24", 
+                                    "172.16.2.0/24"
+                                ]
+                            }
+                        }, 
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.3.0/24", 
+                                    "172.16.4.0/24"
+                                ]
+                            }
+                        }, 
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.5.0/24", 
+                                    "172.16.6.0/24"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "img_src": "image/general_router_70.png", 
+            "width": 75, 
+            "height": 52, 
+            "data": {
+                "id": 14000, 
+                "子网": "192.168.1.0/24"
+            }, 
+            "childrens": [
+                {
+                    "img_src": "image/general_switch_70.png", 
+                    "width": 75, 
+                    "height": 52, 
+                    "data": {
+                        "id": 13000
+                    }, 
+                    "childrens": [
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX云", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.1.0/24", 
+                                    "172.16.2.0/24"
+                                ]
+                            }
+                        }, 
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.3.0/24", 
+                                    "172.16.4.0/24"
+                                ]
+                            }
+                        }, 
+                        {
+                            "img_src": "image/port-c.png", 
+                            "width": 25, 
+                            "height": 25, 
+                            "data": {
+                                "节点名称": "北京-XX", 
+                                "vlanID": 1300, 
+                                "子网": [
+                                    "172.16.5.0/24", 
+                                    "172.16.6.0/24"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+};

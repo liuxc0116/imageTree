@@ -124,17 +124,18 @@
             this.total_layers = layers;
             console.log(layers);
         },
-        reload: function(data) {
+        reload: function(datas) {
             if (this.zr != null) {
                 this.zr.clear();
                 this.zr = null;
             }
-            this.render(data);
+            this.render(datas);
         },
         render: function(datas) {
             //create tree base on max leaf
             if (this.zr == null) {
-                this.init(datas);
+                console.log(datas.data);
+                this.init(datas.data);
             }
             var layers = this.total_layers;
             var child_nodes = [];
@@ -169,6 +170,18 @@
             /*if (per_layer_height > 50) {
                 per_layer_height = 100;
             }*/
+            var zr_text = new zrender.Text({
+                position : [10, 20],
+                style: {
+                    text: datas.title,
+                    textFill: 'black',
+                    textFont: '14px Microsoft Yahei'
+                },
+                zlevel: 4,
+                draggable: true
+            })
+            
+            this.zr.add(zr_text);
             
             for (var layer_index = layer_len - 1; layer_index >= 0; layer_index--) {
                 var This = this;
