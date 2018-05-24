@@ -1,6 +1,10 @@
-/*! Imagetree - v0.1.0 - 2018-05-24
-* https://github.com/liuxc0116/imageTree
-* Copyright (c) 2018 liuxc; Licensed zrender */
+/*
+ * imageTree
+ * https://github.com/liuxc/imageTree
+ *
+ * Copyright (c) 2018 liuxc
+ * Licensed under the zrender license.
+ */
 // JavaScript Document
 
 (function(zrender){
